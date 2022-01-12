@@ -3,11 +3,17 @@
 
 
 :root{
+    /* Font Family */
     --ff-nunito: 'Nunito', sans-serif;
     --ff-raleway: 'Raleway', sans-serif;
     --ff-urbanist: 'Urbanist', sans-serif;
     /* Colors */
     --c-search-border: lightgray;
+    --c-white: #fff;
+    /* Background Colors */
+    --bgc-announcement: teal;
+    --bgc-slider: coral;
+    --bgc-arrow-slider: #fff7f7;
 }
 
 *, *:before, *:after {
