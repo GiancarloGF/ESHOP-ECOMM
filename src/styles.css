@@ -6,10 +6,14 @@
 	--ff-raleway: 'Raleway', sans-serif;
 	--ff-urbanist: 'Urbanist', sans-serif;
 	/* Colors */
+	--c-primary: #008080;
+	--c-primary-light: #02a1a1;
+	--c-primary-dark: #006b6b;
 	--c-search-border: lightgray;
 	--c-white: #fff;
+	--c-placeholder: lightgray;
 	/* Background Colors */
-	--bgc-announcement: teal;
+	--bgc-announcement: #008080;
 	--bgc-slider: coral;
 	--bgc-arrow-slider: #fff7f7;
 }

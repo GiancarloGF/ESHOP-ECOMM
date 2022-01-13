@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     align-items: center;
-    background-color: var(--bgc-announcement);
+    background-color: var(--c-primary);
     color: var(--c-white);
     display: flex;
     height: 30px;
