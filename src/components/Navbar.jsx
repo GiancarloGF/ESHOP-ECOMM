@@ -63,7 +63,7 @@ const Navbar = () => {
 					</SearchContainer>
 				</Left>
 				<Center>
-					<Logo>SR STORE</Logo>
+					<Logo>SR STORE.</Logo>
 				</Center>
 				<Right>
 					<MenuItem>REGISTER</MenuItem>
