@@ -57,12 +57,18 @@ const Image = styled.img`
 `;
 
 const InfoContainer = styled.div`
+	display: flex;
+	flex-direction: column;
 	flex: 1;
 	padding: 50px;
 `;
 
 const Title = styled.h1`
 	font-size: 70px;
+	align-self: center;
+	@media screen and (max-width: 1024px) {
+		font-size: 35px;
+	}
 `;
 const Description = styled.p`
 	margin: 50px 0;
@@ -75,6 +81,8 @@ const Button = styled.button`
 	font-size: 20px;
 	background-color: transparent;
 	cursor: pointer;
+	align-self: end;
+	width: 50%;
 `;
 
 const Slider = () => {
@@ -82,12 +90,12 @@ const Slider = () => {
 	const dataLength = sliderItems.length;
 	const handleClick = (direction) => {
 		if (direction === 'left') {
-			setSlideIndex(slideIndex > 0 ? slideIndex - 1 : dataLength-1);
-		} else if(direction === 'right'){
-			setSlideIndex(slideIndex < dataLength-1 ? slideIndex + 1 : 0);
+			setSlideIndex(slideIndex > 0 ? slideIndex - 1 : dataLength - 1);
+		} else if (direction === 'right') {
+			setSlideIndex(slideIndex < dataLength - 1 ? slideIndex + 1 : 0);
 		}
 	};
-	
+
 	return (
 		<Container>
 			<Arrow direction='left' onClick={() => handleClick('left')}>

@@ -31,15 +31,16 @@ const SocialContainer = styled.div`
 `;
 
 const SocialIcon = styled.div`
-	width: 40px;
-	height: 40px;
+	align-items: center;
+	background-color: #${(props) => props.color};
 	border-radius: 50%;
 	color: white;
-	background-color: #${(props) => props.color};
+	cursor: pointer;
 	display: flex;
-	align-items: center;
+	height: 40px;
 	justify-content: center;
 	margin-right: 20px;
+	width: 40px;
 `;
 
 const Center = styled.div`
