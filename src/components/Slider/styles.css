@@ -1,0 +1,129 @@
+.slider__card {
+	width: 1200px;
+	max-width: 100%;
+	height: 600px;
+	margin: 0 auto;
+	background-color: var(--c-ternary);
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+	padding: 1rem 2rem;
+}
+
+.slider__image {
+	grid-column: 7 / span 5;
+	grid-row: 1 / span 12;
+	align-self: center;
+}
+
+.slider__image > img {
+	max-width: 100%;
+}
+
+.slider__title {
+	grid-column: 1 / span 6;
+	grid-row: 2 / span 2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.slider__title span {
+	font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+	font-family: var(--ff-nunito);
+	line-height: 0.8;
+}
+
+.slider__description {
+	grid-column: 1 / span 6;
+	grid-row: 4 / span 2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.slider__description p {
+	font-size: clamp(1.5rem, 3vw, 3rem);
+	font-weight: 100;
+	line-height: 0.5;
+}
+
+.slider__rating {
+	grid-column: 1 / span 6;
+	grid-row: 6 / span 1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.slider__price {
+	font-family: var(--ff-arvo);
+	grid-column: 1 / span 6;
+	grid-row: 7 / span 2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.slider__price > span {
+	font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+	font-weight: 700;
+}
+
+.slider__price > span:last-child {
+	font-size: clamp(2rem, 6vw, 4rem);
+}
+
+.slider__buttons {
+	grid-column: 1 / span 6;
+	grid-row: 10 / span 2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2rem;
+}
+
+.slider__options {
+	grid-column: 12 / span 1;
+	grid-row: 1 / span 12;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 769px) {
+}
+
+@media screen and (max-width: 426px) {
+	.slider__card {
+		padding: 1rem;
+		height: 300px;
+	}
+
+	.slider__title {
+		grid-row: 1 / span 3;
+	}
+
+	.slider__options {
+		grid-column: 1 / span 12;
+		grid-row: 12 / span 11;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+	}
+
+	.slider__image {
+		grid-column: 8 / span 5;
+		grid-row: 1 / span 12;
+		align-self: center;
+	}
+	.slider__buttons {
+		gap: 1rem;
+	}
+
+	.slider__rating > span {
+		font-size: 1.1rem;
+	}
+}

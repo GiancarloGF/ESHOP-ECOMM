@@ -1,4 +1,4 @@
-import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
+import { Send } from "@material-ui/icons";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 
@@ -15,7 +15,7 @@ const Title = styled.h1`
   margin-bottom: 20px;
 `;
 
-const Description = styled.div`
+const Desc = styled.div`
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 20px;
@@ -36,9 +36,6 @@ const Input = styled.input`
   border: none;
   flex: 8;
   padding-left: 20px;
-  &::placeholder {
-    color: lightgray;
-  }
 `;
 
 const Button = styled.button`
@@ -46,18 +43,17 @@ const Button = styled.button`
   border: none;
   background-color: teal;
   color: white;
-  cursor: pointer;
 `;
 
 const Newsletter = () => {
   return (
     <Container>
       <Title>Newsletter</Title>
-      <Description>Get timely updates from your favorite products.</Description>
+      <Desc>Get timely updates from your favorite products.</Desc>
       <InputContainer>
         <Input placeholder="Your email" />
         <Button>
-          <SendOutlinedIcon />
+          <Send />
         </Button>
       </InputContainer>
     </Container>

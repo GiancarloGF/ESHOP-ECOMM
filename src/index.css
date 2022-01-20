@@ -1,0 +1,118 @@
+
+/* EXTERNAL RESOURCES */
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Dongle:wght@300;400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+/* VARIABLES */
+:root {
+	/* Font Family */
+	--ff-nunito: 'Nunito', sans-serif;
+	--ff-raleway: 'Raleway', sans-serif;
+	--ff-urbanist: 'Urbanist', sans-serif;
+	--ff-dongle: 'Dongle', sans-serif;
+	--ff-arvo: 'Arvo', serif;
+	/* Colors */
+	--c-primary: #000;
+	--c-secondary: #F2994A;
+	--c-ternary: #f6f6f6;
+	--c-primary-light: #02a1a1;
+	--c-primary-dark: #006b6b;
+	--c-search-border: lightgray;
+	--c-white: #fff;
+	--c-placeholder: lightgray;
+	/* Background Colors */
+	--bgc-announcement: #008080;
+	--bgc-slider: coral;
+	--bgc-arrow-slider: #fff7f7;
+
+	/* Size */
+	--s-1: 1rem;
+	--s-2: 2rem;
+	--s-3: 3rem;
+	--s-4: 4rem;
+	--s-5: 5rem;
+	--s-6: 6rem;
+	--s-7: 7rem;
+	--s-8: 8rem;
+	--s-9: 9rem;
+	--s-10: 10rem;
+}
+
+
+/* GLOBAL */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Dongle', sans-serif;
+	font-size: 16px;
+	margin: 0 !important;
+}
+
+section {
+	width: auto;
+	padding: 1rem 2rem;
+	margin: 1rem 0;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+/* UTILITIES */
+
+/* width */
+.w-100p{
+	width: 100%;
+}
+.w-75p {
+	width: 75%;
+}
+.w-50p {
+	width: 50%;
+}
+.w-25p {
+	width: 25%;
+}
+/* height */
+.h-100p {
+	height: 100%;
+}
+.h-75p {
+	height: 75%;
+}
+.h-50p {
+	height: 50%;
+}
+.h-25p {
+	height: 25%;
+}
+
+.h-100px {
+	height: 100px;
+}
+.h-75px {
+	height: 75px;
+}
+.h-50px {
+	height: 50px;
+}
+.h-25px {
+	height: 25px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 425px) {
+	section{
+		padding: 0.5rem;
+	}
+}

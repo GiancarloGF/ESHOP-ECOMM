@@ -1,0 +1,76 @@
+/* GLOBAL */
+.button {
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	cursor: pointer;
+}
+.button__text {
+	font-family: var(--ff-nunito);
+	font-size: clamp(0.5rem, 1.8vw, 2rem);
+	padding-left: 1.5rem;
+	padding-right: 1rem;
+}
+.button__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+}
+
+/* Buttons variants */
+.button--primary {
+	background-color: #000;
+	color: #fff;
+}
+.button--ternary {
+	background-color: #c4c4c4;
+	color: #000;
+}
+
+/* Custom buttons */
+.button--addToCart {
+	border-radius: 40px;
+	padding: 1rem;
+}
+
+.button--addToCart:hover .button__icon {
+	background-color: rgb(255, 255, 255, 10%);
+}
+
+.button--addToWish {
+	background-color: #c4c4c4;
+	border-radius: 50%;
+	transition: all 0.2s ease-in-out;
+}
+.button--addToWish:hover {
+	background-color: red;
+	transition: all 0.2s ease-in-out;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+	.button--addToCart .button__icon {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.button--addToCart {
+		height: auto;
+		padding: 0;
+	}
+	.button__text {
+		display: none;
+	}
+
+	.button--addToCart .button__icon {
+		display: flex;
+	}
+	.button__icon {
+		height: 50px;
+		width: 50px;
+	}
+}

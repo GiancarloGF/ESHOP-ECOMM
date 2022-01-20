@@ -1,0 +1,61 @@
+.categories__title{
+  font-family: var(--ff-nunito);
+  font-size: 3rem;
+}
+
+.categories__items{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background: var(--c-ternary);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.item:hover{
+  background-color: var(--c-secondary);
+  transition: all 0.2s ease-in;
+}
+
+.item__title{
+  font-size: 3.5rem;
+  font-family: var(--ff-nunito);
+}
+
+.item--jackets{
+  background-image: url('https://i.imgur.com/ujSNZkV.png');
+  background-position: right center;
+}
+
+.item--coats{
+  background-image: url('https://i.imgur.com/5EFMXrB.png');
+  background-position: right center;
+
+}
+
+.item--tshirts{
+  background-image: url('https://i.imgur.com/hu9gWbs.png');
+  background-position: right center;
+  align-items: flex-start;
+}
+
+.item--jeans{
+  background-image: url('https://i.imgur.com/ovxW33l.png');
+  background-position: right center;
+}
+
+.item--shoes{
+  background-image: url('https://i.imgur.com/DWXw5WH.png');
+  justify-content: flex-end;
+  align-items: flex-end;
+}
