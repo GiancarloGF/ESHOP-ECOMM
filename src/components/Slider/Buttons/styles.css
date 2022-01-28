@@ -16,8 +16,8 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
 }
 
 /* Buttons variants */
@@ -32,7 +32,7 @@
 
 /* Custom buttons */
 .button--addToCart {
-	border-radius: 40px;
+	border-radius: 20px;
 	padding: 1rem;
 }
 
@@ -42,7 +42,7 @@
 
 .button--addToWish {
 	background-color: #c4c4c4;
-	border-radius: 50%;
+	border-radius: 20px;
 	transition: all 0.2s ease-in-out;
 }
 .button--addToWish:hover {
@@ -51,13 +51,13 @@
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 	.button--addToCart .button__icon {
 		display: none;
 	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 	.button--addToCart {
 		height: auto;
 		padding: 0;
@@ -68,9 +68,5 @@
 
 	.button--addToCart .button__icon {
 		display: flex;
-	}
-	.button__icon {
-		height: 50px;
-		width: 50px;
 	}
 }

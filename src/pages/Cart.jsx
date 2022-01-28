@@ -1,19 +1,19 @@
-import { Add, Remove } from "@material-ui/icons";
-import { useSelector } from "react-redux";
+// import { Add, Remove } from "@material-ui/icons";
+// import { useSelector } from "react-redux";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { mobile } from "../responsive";
-import StripeCheckout from "react-stripe-checkout";
-import { useEffect, useState } from "react";
-import { userRequest } from "../requestMethods";
-import { useHistory } from "react-router";
-
-const KEY = process.env.REACT_APP_STRIPE;
+// import { mobile } from "../responsive";
+// import StripeCheckout from "react-stripe-checkout";
+// import { useEffect, useState } from "react";
+// import { userRequest } from "../requestMethods";
+// import { useHistory } from "react-router";
+import ShoppingCart from '../components/ShoppingCart';
+// const KEY = process.env.REACT_APP_STRIPE;
 
 const Container = styled.div``;
-
+/* 
 const Wrapper = styled.div`
   padding: 20px;
   ${mobile({ padding: "10px" })}
@@ -158,17 +158,17 @@ const Button = styled.button`
   color: white;
   font-weight: 600;
 `;
-
+ */
 const Cart = () => {
-  const cart = useSelector((state) => state.cart);
-  const [stripeToken, setStripeToken] = useState(null);
-  const history = useHistory();
+  // const cart = useSelector((state) => state.cart);
+  // const [stripeToken, setStripeToken] = useState(null);
+  // const history = useHistory();
 
-  const onToken = (token) => {
+ /*  const onToken = (token) => {
     setStripeToken(token);
-  };
+  }; */
 
-  useEffect(() => {
+  /* useEffect(() => {
     const makeRequest = async () => {
       try {
         const res = await userRequest.post("/checkout/payment", {
@@ -181,12 +181,13 @@ const Cart = () => {
       } catch {}
     };
     stripeToken && makeRequest();
-  }, [stripeToken, cart.total, history, cart]);
+  }, [stripeToken, cart.total, history, cart]); */
   return (
     <Container>
       <Navbar />
-      <Announcement />
-      <Wrapper>
+      {/* <Announcement /> */}
+      <ShoppingCart />
+      {/* <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
           <TopButton>CONTINUE SHOPPING</TopButton>
@@ -261,8 +262,8 @@ const Cart = () => {
             </StripeCheckout>
           </Summary>
         </Bottom>
-      </Wrapper>
-      <Footer />
+      </Wrapper> */}
+      {/* <Footer /> */}
     </Container>
   );
 };

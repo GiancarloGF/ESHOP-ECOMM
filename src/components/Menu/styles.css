@@ -1,0 +1,20 @@
+.menu{
+    background-color: var(--c-primary);
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    position: absolute;
+    top: 100%;
+}
+
+.menu__item{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: var(--ff-nunito);
+}
+
+.menu__item:hover{
+    background-color: var(--c-secondary);
+}

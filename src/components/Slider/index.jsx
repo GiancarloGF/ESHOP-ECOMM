@@ -6,8 +6,8 @@
 import Rating from '@mui/material/Rating';
 import AddToCartBtn from './Buttons/AddToCartBtn';
 import AddToWishBtn from './Buttons/AddToWishBtn';
-import Steper from '../Steper';
-import  {featuredProducts} from '../../data';
+import RadioOptions from '../RadioOptions';
+import { featuredProducts } from '../../data';
 import './styles.css';
 
 const Slider = () => {
@@ -31,7 +31,11 @@ const Slider = () => {
 						<p>{featuredProducts[0].description}</p>
 					</div>
 					<div className='slider__rating'>
-						<Rating name='read-only' value={featuredProducts[0].stars} readOnly />
+						<Rating
+							name='read-only'
+							value={featuredProducts[0].stars}
+							readOnly
+						/>
 					</div>
 					<div className='slider__price'>
 						<span>$</span>
@@ -44,10 +48,13 @@ const Slider = () => {
 					<div className='slider__image'>
 						<img src={featuredProducts[0].imgUrl} alt='product' />
 					</div>
-					<div className='slider__options'>
-						<Steper />
-					</div>
+					{/* <div className='slider__options'>
+						<RadioOptions />
+					</div> */}
 				</div>
+			</div>
+			<div className='slider__options'>
+				<RadioOptions />
 			</div>
 		</section>
 	);

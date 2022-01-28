@@ -10,10 +10,16 @@
 	display: flex;
 	align-items: center;
 }
+.navbar__logo > a {
+	color: var(--c-primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .logo {
 	font-weight: 400;
-	font-size: clamp(1.5rem, 9vw, 5rem);
+	font-size: clamp(1.5rem, 4vw, 4rem);
 }
 
 .navbar__nav {
@@ -45,6 +51,10 @@
 .navbar__item svg {
 	height: 2rem;
 	width: 2rem;
+}
+
+.navbar__item-user{
+	position: relative;
 }
 
 .navbar__item--mobile {
